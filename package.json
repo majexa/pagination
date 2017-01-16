@@ -1,0 +1,22 @@
+{
+  "name": "pagination",
+  "version": "0.0.1",
+  "description": "Pagination",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/majexa/pagination.git"
+  },
+  "keywords": [
+    "pagination"
+  ],
+  "author": "Andrey Yartsev <andrey.yartsev.g@gmail.com> (http://majexa.ru)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/majexa/pagination/issues"
+  },
+  "homepage": "https://github.com/majexa/pagination#readme"
+}
