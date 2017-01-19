@@ -43,8 +43,11 @@ class Pagination
       descN = 0
       for pageNumber in [1..pagesN]
         descN--
-        if pageNumber < page - Math.round(@options.maxPages / 2) - 1 || pageNumber > page + Math.round(@options.maxPages / 2) - 1
+        if pageNumber < page - Math.round(@options.maxPages / 2) + 1
           continue
+        if pageNumber > page + Math.round(@options.maxPages / 2) - 1
+          continue
+
         if @options.basePath == '/'
           link = @options.basePath + 'pg'
         else

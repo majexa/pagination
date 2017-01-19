@@ -54,7 +54,10 @@
         descN = 0;
         for (pageNumber = i = 1, ref = pagesN; 1 <= ref ? i <= ref : i >= ref; pageNumber = 1 <= ref ? ++i : --i) {
           descN--;
-          if (pageNumber < page - Math.round(this.options.maxPages / 2) - 1 || pageNumber > page + Math.round(this.options.maxPages / 2) - 1) {
+          if (pageNumber < page - Math.round(this.options.maxPages / 2) + 1) {
+            continue;
+          }
+          if (pageNumber > page + Math.round(this.options.maxPages / 2) - 1) {
             continue;
           }
           if (this.options.basePath === '/') {
