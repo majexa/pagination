@@ -19,9 +19,8 @@ class Pagination
   constructor: (options) ->
     @options = Object.assign(@options, options)
 
-  data: (req, totalCount) ->
-    page = req.params.pg || 1
-
+  data: (page, totalCount) ->
+    page = parseInt(page)
     if (page <= 0)
       page = 1 # Если №страницы меньше или равен 0, считаем, что это первая страница
     if @options.n == 0

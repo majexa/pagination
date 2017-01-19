@@ -26,9 +26,9 @@
       this.options = Object.assign(this.options, options);
     }
 
-    Pagination.prototype.data = function(req, totalCount) {
-      var _page, d, descN, html, i, limit, link, links, offset, pNext, pPrev, page, pageNumber, pagesN, ref;
-      page = req.params.pg || 1;
+    Pagination.prototype.data = function(page, totalCount) {
+      var _page, d, descN, html, i, limit, link, links, offset, pNext, pPrev, pageNumber, pagesN, ref;
+      page = parseInt(page);
       if (page <= 0) {
         page = 1;
       }
