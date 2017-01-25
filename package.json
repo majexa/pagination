@@ -1,5 +1,5 @@
 {
-  "name": "pagination",
+  "name": "ngn-pagination",
   "version": "0.0.3",
   "description": "Pagination",
   "main": "index.js",
