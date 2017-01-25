@@ -17,7 +17,7 @@
     var paginationData = pagination.data(currentPageN, totalCollectionRecordsCount);
     
     // Using result with MongoDB collection
-    collection.find({}, Object.keys(model)).
+    collection.find({}).
       skip(pagination.options.n * (paginationData.page - 1)).
       limit(pagination.options.n).
       toArray().then(function (items) {
